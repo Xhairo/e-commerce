@@ -12,17 +12,17 @@ export default function Banner({ titulo, set }) {
         <img
           src={
             set === "mostrecent"
-              ? "src/assets/imagenes/eldensofte.jpg"
+              ? "src/assets/imagenes/bannermostrecent.jpg"
               : "" || set === "prox"
-              ? "src/assets/imagenes/gta6banner.png"
+              ? "src/assets/imagenes/bannerprox.png"
               : "" || set === "pc"
-              ? "src/assets/imagenes/elden-ring-fantasy-arpg-key-art-banner.jpg"
+              ? "src/assets/imagenes/bannerpc.jpg"
               : "" || set === "ps"
-              ? "src/assets/imagenes/BANNER-GOD-OF-WAR.png"
+              ? "src/assets/imagenes/bannerps.png"
               : "" || set === "xbox"
-              ? "src/assets/imagenes/forza-l.jpg"
+              ? "src/assets/imagenes/bannerxbox.jpg"
               : "" || set === "nsw"
-              ? "src/assets/imagenes/BANNER-TRANSFORMOSIS-KIRBY.png"
+              ? "src/assets/imagenes/bannernsw.png"
               : ""
           }
           alt="banner"
