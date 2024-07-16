@@ -1,4 +1,9 @@
-import { useState } from "react";
+import banner01 from "../banners/eldensofte.jpg";
+import banner02 from "../banners/bannerprox.png";
+import banner03 from "../banners/bannermostrecent.jpg";
+import banner04 from "../banners/bannerps.png";
+import banner05 from "../banners/bannerxbox.jpg";
+import banner06 from "../banners/bannernsw.png";
 import "./Banners.css";
 
 export default function Banner({ titulo, set }) {
@@ -12,17 +17,17 @@ export default function Banner({ titulo, set }) {
         <img
           src={
             set === "mostrecent"
-              ? "src/assets/imagenes/bannermostrecent.jpg"
+              ? banner01
               : "" || set === "prox"
-              ? "src/assets/imagenes/bannerprox.png"
+              ? banner02
               : "" || set === "pc"
-              ? "src/assets/imagenes/bannerpc.jpg"
+              ? banner03
               : "" || set === "ps"
-              ? "src/assets/imagenes/bannerps.png"
+              ? banner04
               : "" || set === "xbox"
-              ? "src/assets/imagenes/bannerxbox.jpg"
+              ? banner05
               : "" || set === "nsw"
-              ? "src/assets/imagenes/bannernsw.png"
+              ? banner06
               : ""
           }
           alt="banner"
