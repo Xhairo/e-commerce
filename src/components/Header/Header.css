@@ -1,0 +1,50 @@
+header {
+  background-color: yellow;
+  font-size: 1.1rem;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar-logo {
+  text-shadow: 1px 0px 1px #00e6f6;
+}
+.header-navbar > ul {
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  display: flex;
+}
+.header-navbar > ul > li > a {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  text-shadow: 1px 0px 1px #00e6f6;
+  color: var(--primary-color);
+}
+.header-navbar > ul > li > a:before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 2;
+  background: black;
+  box-shadow: 2px 0.5px 2px #00e6f6;
+  width: 0;
+  height: var(--LineHeight);
+  bottom: var(--BottomOffset);
+  left: calc(var(--LineHeight) / -2);
+  transition: 0.3s cubic-bezier(0.03, 0.3, 0.4, 0.96);
+  transform: skew(-10deg);
+}
+.header-navbar > ul > li > a.active:before {
+  width: calc(100% + var(--LineHeight));
+}
+.react-icons {
+  width: 50px;
+}
