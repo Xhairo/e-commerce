@@ -6,7 +6,7 @@ export default function Card({ producto }) {
   const navigate = useNavigate();
 
   const handleCardClick = (key) => {
-    navigate(`/producto/${key}`);
+    navigate(`/e-commerce/producto/${key}`);
   };
   return (
     <div

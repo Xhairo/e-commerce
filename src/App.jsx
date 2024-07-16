@@ -17,14 +17,14 @@ function App() {
       <CarritoContext.Provider value={cart}>
         <Header />
         <Routes>
-          <Route path="/" element={<InicioPage />}></Route>
-          <Route path="/pc" element={<PcPage />}></Route>
-          <Route path="/ps" element={<PsPage />}></Route>
-          <Route path="/xbox" element={<XboxPage />}></Route>
-          <Route path="/nsw" element={<NswPage />}></Route>
+          <Route path="/e-commerce/" element={<InicioPage />}></Route>
+          <Route path="/e-commerce/pc" element={<PcPage />}></Route>
+          <Route path="/e-commerce/ps" element={<PsPage />}></Route>
+          <Route path="/e-commerce/xbox" element={<XboxPage />}></Route>
+          <Route path="/e-commerce/nsw" element={<NswPage />}></Route>
           <Route
-            path="/producto/:id"
-            element={<ProductPage cart={cart} setCart={setCart} />}
+            path="/e-commerce/producto/:id"
+            element={<ProductPage />}
           ></Route>
         </Routes>
       </CarritoContext.Provider>

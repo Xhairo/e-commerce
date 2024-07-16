@@ -48,6 +48,12 @@
 .grid-product-container img {
   height: 600px;
 }
+.details-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 5px;
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

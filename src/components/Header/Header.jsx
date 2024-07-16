@@ -16,7 +16,7 @@ export default function Header() {
         <ul>
           <li>
             <Link
-              to="/"
+              to="/e-commerce/"
               onClick={() => setMenu("inicio")}
               className={menu === "inicio" ? "active" : ""}
             >
@@ -25,7 +25,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/pc"
+              to="/e-commerce/pc"
               className={menu === "pc" ? "active" : ""}
               onClick={() => setMenu("pc")}
             >
@@ -34,7 +34,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/ps"
+              to="/e-commerce/ps"
               className={menu === "ps" ? "active" : ""}
               onClick={() => setMenu("ps")}
             >
@@ -43,7 +43,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/xbox"
+              to="/e-commerce/xbox"
               className={menu === "xbox" ? "active" : ""}
               onClick={() => setMenu("xbox")}
             >
@@ -52,7 +52,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/nsw"
+              to="/e-commerce/nsw"
               onClick={() => setMenu("nintendo")}
               className={menu === "nintendo" ? "active" : ""}
             >

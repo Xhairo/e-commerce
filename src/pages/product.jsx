@@ -10,30 +10,21 @@ export default function Product() {
   useEffect(() => {
     const datos = data.find((prod) => prod.id == id);
     setProducto(datos);
+    console.log(datos);
   }, []); //Al tener la depencia vacia, indica que se renderizara una vez el useEffect. Si no fuera asi, se actualizaria cada vez que el usuario interactuara con la app web
-  const generarPedido = (producto) => {
-    const [primera, segunda, tercera] = producto.nombre.split(" ", 3); //Estamos abstrayendo el dato desde un array
-    const cod = `${primera[0]}-${segunda[0]}-${tercera[0]}-id-${producto.id}`;
-    console.log(cod);
-
-    producto["codigo"] = cod;
-    producto["cantidad"] = 1;
-    const nuevoArray = [...carrito, producto];
-    /* carrit.push(producto) */
-    setCarrito(nuevoArray);
-  };
 
   return (
     <div className="page-container">
       <div className="product-container">
         <div className="grid-product-container">
-          <img src={producto.img} alt="imagen del producto" />
+          <img src={producto && producto.img} alt="imagen del producto" />
           <div className="details-product">
-            <h2>{producto.nombre}</h2>
-            <p>Descripcion:{producto.descripcion}</p>
-            <span>Categoria: {producto.categoria}</span>
-            <span>Precio </span>
-            <strong>Precio Actual </strong>
+            <h2>{producto && producto.nombre}</h2>
+            <p>{producto && producto.descripcion}</p>
+            <h3>{producto && producto.categoria}</h3>
+            <span></span>
+            <span>Precio {producto && producto.precio} </span>
+            <strong>Precio Oferta {producto && producto.precio_oferta}</strong>
           </div>
         </div>
       </div>

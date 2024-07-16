@@ -7,8 +7,6 @@ import banner06 from "../banners/bannernsw.png";
 import "./Banners.css";
 
 export default function Banner({ titulo, set }) {
-  console.log(set);
-
   return (
     <>
       <article className="banner">
